@@ -14,5 +14,15 @@ public class MeuPrimeiroPrograma {
 		JOptionPane.showMessageDialog(null, "No Pain, No Again!");
 		
 		/* - Imprimindo uma mensagem no console e outra na Tela - */
+		
+		/* - Trabalhando com Orientacao a Objetos - */
+		Livro livro = new Livro();
+		livro.nome = "Java 8 Pratico";
+		livro.descricao = "Novos recursos da linguagem";
+		livro.valor = 59.90;
+		livro.isbn = "978-85-66250-46-6";
+		
+		System.out.println("O nome do livro é: " + livro.nome);
+		
 	}
 }
