@@ -20,5 +20,22 @@ public class Livro {
 		System.out.println("Valor: " + this.valor);
 		System.out.println("ISBN: " + this.isbn);
 		System.out.println("--");
+		
+		if(this.temAutor()){
+			autor.mostraDetalhes();
+		}
+	}
+	
+	public void aplicaDescontoDe(double porcentagem){
+		this.valor -= this.valor * porcentagem;
+	}
+	
+	boolean temAutor(){
+		return this.autor != null;
+	}
+	
+	public Livro(){
+		/* - Criando o construtor da Classe Livro - */
+		System.out.println("Mais um objeto livro instanciado!");
 	}
 }
