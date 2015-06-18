@@ -12,7 +12,16 @@ public class Livro {
 	private double valor;
 	private String isbn; /* - International Standard Book Number- */
 	private Autor autor; /* - Usando Composição - */
+	private boolean impresso;
 	
+	public boolean isImpresso() {
+		return impresso;
+	}
+
+	public void setImpresso(boolean impresso) {
+		this.impresso = impresso;
+	}
+
 	public String getNome() {
 		return nome;
 	}
@@ -69,6 +78,8 @@ public class Livro {
 	public boolean aplicaDescontoDe(double porcentagem){
 		if(porcentagem > 0.3){
 			return false;
+		}else if(!this.impresso && porcentagem > 0.15){
+			return false;
 		}
 		this.valor -= this.valor * porcentagem;
 		return true;
@@ -87,9 +98,9 @@ public class Livro {
 		/* - Criando o construtor da Classe Livro - Com Sobrecarga- */
 		this.autor = autor;
 		this.isbn = "000-00-00000-00-0";
+		this.impresso = true;
 	}
 	public Livro(){
-		this.autor = autor;
 		this.isbn = "000-00-00000-00-0";
 	}
 }
