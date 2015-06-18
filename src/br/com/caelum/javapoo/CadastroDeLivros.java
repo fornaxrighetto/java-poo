@@ -8,25 +8,30 @@ package br.com.caelum.javapoo;
 public class CadastroDeLivros {
 	public static void main(String[] args) {
 		/*- Vamos trabalhar com Orientacao a Objetos -*/
-		Livro livro = new Livro();
-		livro.nome = "Java 8 Pratico";
-		livro.descricao = "Novos recursos da linguagem";
-		livro.valor = 59.90;
-		livro.isbn = "978-85-66250-46-6";
-		/*
-		System.out.println("O nome do livro é: " + livro.nome);
-		System.out.println("A descrição do livro é: " + livro.descricao);
-		System.out.println("O valor do livro é: " + livro.valor);
-		System.out.println("O numero ISBN do livro " + livro.nome + " é: " + livro.isbn);
-		*/
-		
-		livro.mostraDetalhes();
-		
 		Autor autor = new Autor();
-		autor.nome = "Rodrigo Turini";
-		autor.email = "rodrigo.turini@caelum.com.br";
-		autor.cpf = "123.456.789-10";
+		autor.setNome("Rodrigo Turini");
+		autor.setEmail("rodrigo.turini@caelum.com.br");
+		autor.setCpf("123.456.789.10");
+		  
+		Livro livro = new Livro(autor);
+		livro.setNome("Java 8 Prático");
+		livro.setDescricao("Novos recursos da linguagem");
+		livro.setValor(59.90);
+		livro.setIsbn("978-85-66250-46-6");
+		  
+		livro.mostraDetalhes();
+		 
+		Autor outroAutor = new Autor();
+		outroAutor.setNome("Paulo Silveira");
+		outroAutor.setEmail("paulo.silveira@caelum.com.br");
+		outroAutor.setCpf("123.456.789.10");
+		      
+		Livro outroLivro = new Livro(outroAutor);
 		
-		livro.autor = autor; /* - Associando o Autor ao seu Livro - */
+		outroLivro.setNome("Lógica de Programação");
+		outroLivro.setDescricao("Crie seus primeiros programas");
+		outroLivro.setValor(59.90);
+		outroLivro.setIsbn("978-85-66250-22-0");
+		outroLivro.mostraDetalhes();
 	}
 }
