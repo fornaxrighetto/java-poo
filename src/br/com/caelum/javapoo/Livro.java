@@ -5,7 +5,7 @@ package br.com.caelum.javapoo;
  * @version 1.0
  * @book Desbravando Java e Orientacao a Objetos
  */
-public class Livro {
+public abstract class Livro {
 	/*- Vamos trabalhar com Orientacao a Objetos -*/
 	private String nome;
 	private String descricao;

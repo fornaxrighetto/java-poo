@@ -10,7 +10,7 @@ public class RegrasDeDesconto {
 		Autor autor = new Autor();
 		autor.setNome("Rodrigo Turini");
 		
-		Livro livro = new Livro();
+		LivroFisico livro = new LivroFisico(autor);
 		livro.setValor(59.90);
 		
 		System.out.println("Valor atual: " + livro.getValor());
