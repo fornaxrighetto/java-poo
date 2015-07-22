@@ -21,7 +21,7 @@ public class Ebook  extends Livro{
 		double desconto = this.getValor() * porcentagem;
 		this.setValor(this.getValor() - desconto);
 		*/
-		return super.aplicaDescontoDe(porcentagem);
+		return aplicaDescontoDe(porcentagem);
 	}
 	
 	public String getWaterMark() {
