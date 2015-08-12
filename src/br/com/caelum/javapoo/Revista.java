@@ -1,6 +1,6 @@
 package br.com.caelum.javapoo;
 
-public class Revista {
+public class Revista implements Produto{
 	private String nome;
 	private String descricao;
 	private double valor;
