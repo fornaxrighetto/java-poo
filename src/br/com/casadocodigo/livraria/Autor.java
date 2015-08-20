@@ -1,4 +1,4 @@
-package br.com.caelum.javapoo;
+package br.com.casadocodigo.livraria;
 
 /**
  * @author Danilo Righetto
@@ -34,7 +34,7 @@ public class Autor {
 		this.cpf = cpf;
 	}
 
-	void mostraDetalhes(){
+	public void mostraDetalhes(){
 		System.out.println("Mostrando detalhes do Autor");
 		System.out.println("Nome: " + this.nome);
 		System.out.println("Email: " + this.email);

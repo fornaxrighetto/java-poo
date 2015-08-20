@@ -1,4 +1,8 @@
-package br.com.caelum.javapoo;
+package br.com.casadocodigo.testes;
+
+import br.com.casadocodigo.livraria.Autor;
+import br.com.casadocodigo.produtos.Ebook;
+import br.com.casadocodigo.produtos.LivroFisico;
 
 /**
  * @author Danilo Righetto

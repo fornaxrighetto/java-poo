@@ -1,4 +1,4 @@
-package br.com.caelum.javapoo;
+package br.com.casadocodigo.testes;
 
 import javax.swing.JOptionPane;
 

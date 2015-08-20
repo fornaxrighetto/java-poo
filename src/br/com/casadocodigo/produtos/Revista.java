@@ -1,6 +1,8 @@
-package br.com.caelum.javapoo;
+package br.com.casadocodigo.produtos;
 
-public class Revista implements Produto{
+import br.com.casadocodigo.livraria.Editora;
+
+public class Revista implements Produto, Promocional{
 	private String nome;
 	private String descricao;
 	private double valor;

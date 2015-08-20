@@ -1,4 +1,6 @@
-package br.com.caelum.javapoo;
+package br.com.casadocodigo.produtos;
+
+import br.com.casadocodigo.livraria.Autor;
 
 /**
  * @author Danilo Righetto
@@ -62,7 +64,7 @@ public abstract class Livro implements Produto{
 		this.autor = autor;
 	}
 
-	void mostraDetalhes(){
+	public void mostraDetalhes(){
 		System.out.println("Mostrando detalhes do seu Livro: ");
 		System.out.println("Nome: " + this.nome);
 		System.out.println("Descrição: " + this.descricao);
@@ -75,7 +77,7 @@ public abstract class Livro implements Produto{
 		}
 	}
 	
-	public abstract boolean aplicaDescontoDe(double porcentagem);
+	//public abstract boolean aplicaDescontoDe(double porcentagem);
 	/*public boolean aplicaDescontoDe(double porcentagem){
 		if(porcentagem > 0.3){
 			return false;

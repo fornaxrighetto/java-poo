@@ -1,11 +1,13 @@
-package br.com.caelum.javapoo;
+package br.com.casadocodigo.produtos;
+
+import br.com.casadocodigo.livraria.Autor;
 
 /**
  * @author Danilo Righetto
  * @version 1.0
  * @book Desbravando Java e Orientacao a Objetos
  */
-public class LivroFisico extends Livro{
+public class LivroFisico extends Livro implements Promocional{
 	public LivroFisico(Autor autor){
 		super(autor);
 	}

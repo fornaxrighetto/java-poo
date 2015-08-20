@@ -1,4 +1,4 @@
-package br.com.caelum.javapoo;
+package br.com.casadocodigo.livraria;
 
 public class Editora {
 	private String nomeFantasia;
